@@ -23,7 +23,7 @@ if not db.connect():
 class Message(Model):
     id = IntegerField(primary_key=True)
     user = CharField()
-    content = TextField
+    content = TextField()
     pub_date = TimestampField(default=datetime.datetime.now())
 
     class Meta:
