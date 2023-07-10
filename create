@@ -1,0 +1,9 @@
+from db_config import Message
+
+
+def create_message():
+    Message.create(user="sssr", content="hello")
+
+
+if __name__ == "__main__":
+    create_message()
